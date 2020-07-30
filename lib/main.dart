@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './categories_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Come get this bread',
       theme: ThemeData.dark(),
-      home: MyHomePage(title: 'GO big or go home'),
+      home: CategoriesScreen(),
     );
   }
 }
