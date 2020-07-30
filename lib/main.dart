@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Come get this bread',
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        fontFamily: 'Raleway',
+        textTheme: ThemeData.dark().textTheme
+      ),
       home: CategoriesScreen(),
     );
   }
